@@ -63,7 +63,9 @@
       <section class="hero-section bg-hero">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion hero -->
@@ -574,8 +576,59 @@
 
     <!-- #region modal -->
 
-    <div></div>
+    <div class="backdrop" data-modal>
+      <div class="modal-box">
+        <button class="close-modal" data-modal-close>
+          <svg width="8" height="8" class="icon-close-modal">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal">
+          <p class="modal-text">
+            Leave your contacts and we will call you back
+          </p>
+          <div class="modal-user-cont">
+            <label class="modal-label-cont"
+              >Name
+              <div class="modal-box-cont">
+                <svg width="18" height="18" class="icon-modal-cont">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                <input type="text" class="modal-input-cont" name="user-name" />
+              </div>
+            </label>
+          </div>
+          <div class="modal-user-cont">
+            <label class="modal-label-cont"
+              >Phone
+              <div class="modal-box-cont">
+                <svg width="18" height="18" class="icon-modal-cont">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                <input type="tel" class="modal-input-cont" name="user-phone" />
+              </div>
+            </label>
+          </div>
+          <div class="modal-user-cont">
+            <label class="modal-label-cont"
+              >Email
+              <div class="modal-box-cont">
+                <svg width="18" height="18" class="icon-modal-cont">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                <input
+                  type="email"
+                  class="modal-input-cont"
+                  name="user-email"
+                />
+              </div>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
 
+    <script src="./js/modal.js"></script>
     <!-- #endregion modal -->
   </body>
 </html>

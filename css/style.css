@@ -563,12 +563,15 @@ img{
     width: 264px;
     height: 40px; 
     background-color: transparent;
-    
+    gap: 24px;
     color: #fff;
     outline: transparent;
     padding-left: 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-input::placeholder{
@@ -588,7 +591,7 @@ img{
     background-color: #4d5ae5;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     color: #fff;
     display: flex;
@@ -597,6 +600,9 @@ img{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .subscribe-btm:hover,
@@ -659,7 +665,8 @@ margin-left: 16px;
     right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 100%;
+    display: flex;
+    border-radius: 50%;
     background-color: #e7e9fc;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
@@ -668,8 +675,8 @@ margin-left: 16px;
     line-height: 0;
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal-btn:hover,
@@ -680,8 +687,7 @@ margin-left: 16px;
 }
 
 .icon-close-modal{
-    width: 8px;
-    height: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{

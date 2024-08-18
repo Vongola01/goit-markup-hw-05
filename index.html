@@ -625,7 +625,7 @@
                 id="user-email"
               />
             </div>
-            <div class="modal-user-cont">
+            <div class="modal-user-msg">
               <label for="user-msg" class="modal-label-cont">Comment</label>
               <textarea
                 name="user-msg"
@@ -635,13 +635,22 @@
               ></textarea>
             </div>
           </div>
-          <p class="privacy-policy">
-            <input type="checkbox" class="visually-hidden" id="" /><span
-              class="custom-checkbox"
-            ></span>
-            I accept the terms and conditions of the
-            <a href="#" class="link-privacy-policy">Privacy Policy</a>
-          </p>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              class="checkbox visually-hidden"
+              id="user-checkbox"
+            />
+            <label class="privacy-policy" for="user-checkbox">
+              <span class="custom-checkbox">
+                <svg class="icon-custom-checkbox">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="link-privacy-policy">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
       </div>

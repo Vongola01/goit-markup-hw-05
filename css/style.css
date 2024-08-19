@@ -725,14 +725,13 @@ margin-left: 16px;
 
 .modal-box-cont {
     position: relative;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
+
     width: 360px;
     height: 40px;
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    padding-left: 38px;
+
     background: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -755,12 +754,13 @@ margin-left: 16px;
 }
 
 .modal-input-cont {
+    padding-left: 38px;
     width: 100%;
     outline: none;
-
-    border: none;
-    height: 40px  
-
+    height: 40px  ;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-user-msg{
